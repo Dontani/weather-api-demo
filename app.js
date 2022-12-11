@@ -5,8 +5,8 @@ weatherButton.addEventListener('click', () => {
     const lat = 25;
     const lon = -88;
 
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}2&longitude=${lon}&hourly=temperature_2m&temperature_unit=fahrenheit`;
-
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=temperature_2m&temperature_unit=fahrenheit`;
+    
     fetch(url)
         .then(res => res.json())  // parse response as JSON
         .then(data => {
